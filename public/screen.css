@@ -49,3 +49,8 @@ h1 {
   text-align: center;
   font-size: 5rem;
 }
+
+div {
+  display: flex;
+  justify-content: center;
+}
