@@ -27,6 +27,7 @@ const addOneTeamOne = () => {
     console.log('team one Won!!!')
     document.querySelector('.team-1-name').append(' Winner!')
     document.querySelector('.team-1-add-1-button').disabled = true
+    document.querySelector('.team-1-subtract-1-button').disabled = true
   } else {
     teamOneScore += 1
     document.querySelector('.team-1-score').textContent = teamOneScore
@@ -39,6 +40,7 @@ const addOneTeamTwo = () => {
     console.log('team Two Won!!!')
     document.querySelector('.team-2-name').append(' Winner!')
     document.querySelector('.team-2-add-1-button').disabled = true //////////////////////////
+    document.querySelector('.team-2-subtract-1-button').disabled = true
     console.log('disabling add one button team two')
   } else {
     teamTwoScore += 1
@@ -77,6 +79,10 @@ const resetGame = () => {
   document.querySelector('.team-2-name').textContent = 'Team 2'
   document.querySelector('.team-1-input').value = ''
   document.querySelector('.team-2-input').value = ''
+  document.querySelector('.team-1-add-1-button').disabled = false
+  document.querySelector('.team-1-subtract-1-button').disabled = false
+  document.querySelector('.team-2-add-1-button').disabled = false
+  document.querySelector('.team-2-subtract-1-button').disabled = false
   console.log('Game has been Reset')
 }
 const main = () => {
